@@ -20,7 +20,7 @@ SC.initialize({
 
           $('#pause').click(function(e) {
             e.preventDefault();
-            sound.stop();
+            sound.pause();
           });
  
  
