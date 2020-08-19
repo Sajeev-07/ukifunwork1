@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>SolMusic | HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="SolMusic HTML Template">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+ 
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/slicknav.min.css"/>
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <script src="JavaScript.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+    
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Header section -->
+<header class="header-section clearfix">
+    <a href="index.html" class="site-logo">
+        <img src="img/logo.png" alt="">
+    </a>
+    <div class="header-right">
+        <a href="#" class="hr-btn">Help</a>
+        <span>|</span>
+        <div class="user-panel">
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="register">Create an account</a>
+        </div> 
+    </div>
+    <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Pages</a>
+            <ul class="sub-menu">
+                <li><a href="category.html">Category</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="artist.html">Artist</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </li>
+        <li><a href="blog.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
+<!-- Header section end -->
+
+    <div class="checkr" id="login_container_1">
+        <div class="login-container">
+            <h2>Log in</h2>
+            <form action="/action_page.php" class=" needs-validation" novalidate>
+
+                <div class="form-group inner-addon left-addon email_txtbx">
+                    <i class=' glyphicon fas fa-at'></i>
+                    <input type="text" class="form-control email " id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninput="myFunction()" required />
+                    <p class="validation_bar" id="validation_e"></p>
+                </div>
+
+                <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon fas fa-key"></i>
+                    <input type="password" class="form-control " id="pwd" placeholder="Password" name="pwd" oninput="login_validation()" required />
+                    <p class="validation_bar" id="validation_p"></p>
+                </div>
+
+                <input type="button" class="btn btn-default btn_login form-group" onclick="login()" value="Log in">
+                <div class="forgot_password">
+                    <label>Forgot your password?</label>
+                </div>
+                <div class="label2 ">
+                    <label>Don't have an account yet?</label>
+                    <span><a href="signup.html">Sign up</a></span>
+                </div>
+
+                <div class='hr-or'></div>
+
+                <div class="form-group inner-addon left-addon btn_facebook_div">
+                    <i class=' glyphicon fa fa-facebook fbtn_logo'></i>
+                    <input type="button" class="btn btn-default btn_facebook form-group" value="Sign in with Facebook">
+                </div>
+
+                <div class="form-group inner-addon left-addon btn_google_div">
+                    <i class=' glyphicon fa fa-google-plus gbtn_logo'></i>
+                    <input type="button" class="btn btn-default btn_google form-group" value="Sign in with Google">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
